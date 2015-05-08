@@ -1,1 +1,20 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="23" inline="false" x="-5" y="88">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="30">
+        <field name="OBJECT">UP</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_if" id="73" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="sensor_object" id="60">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
