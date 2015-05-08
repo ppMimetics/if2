@@ -8,7 +8,59 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="33"></block>
+          <block type="movement_stop" id="33">
+            <next>
+              <block type="robot_delay" id="117" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="124">
+                    <field name="NUM">500</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_left" id="43">
+                    <next>
+                      <block type="robot_delay" id="45" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="65">
+                            <field name="NUM">5000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_right" id="75">
+                            <next>
+                              <block type="robot_delay" id="77" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="84">
+                                    <field name="NUM">2000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_reverse" id="94">
+                                    <next>
+                                      <block type="robot_delay" id="96" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="104">
+                                            <field name="NUM">2500</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="movement_stop" id="115"></block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
